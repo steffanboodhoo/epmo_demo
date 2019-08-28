@@ -1,0 +1,30 @@
+/* .flex-container {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    align-items: center;
+}
+
+.item {
+    flex: 1 1 auto;
+} */
+
+.data-alert{
+    background-color: red;
+}
+.data-normal{
+    background-color: green;
+}
+
+#cy {
+    align-self: center;
+    width: 80%;
+    height: 80%;
+    display: block;
+    background-color: rgb(223, 229, 235);
+  }
+
+node { 
+    background-color: #38a4d6; 
+}
+

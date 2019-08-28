@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./semantic/dist/semantic.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1 id='project-title'></h1>
+    <table class="ui celled table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Benefit</th>
+                <th>Delta</th>
+                <th>Time Period</th>
+                <th>Monetary Gains</th>
+                <th>Actual Gain</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Item">Mobile app for field staff</td>
+                <td data-label="Benefit">Reduce staff needs via greater efficiency</td>
+                <td data-label="Delta">20% reduction in staff</td>
+                <td data-label="Time Period">Annually</td>
+                <td data-label="Monetary Gains">US$500000</td>
+                <td data-label="Actual Gain" class='data-alert'>US$100000</td>
+            </tr>
+            <tr>
+                <td data-label="Item">Replace AccessCare</td>
+                <td data-label="Benefit">Elinminate AccessCare support costs</td>
+                <td data-label="Delta">Eliminate US$100k p a charge</td>
+                <td data-label="Time Period">Annually</td>
+                <td data-label="Monetary Gains">US$100000</td>
+                <td data-label="Actual Gain" class='data-normal'>US$100000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form class="ui form">
+        <div class="field">
+            <label for="quality_solution_design">Solution Design Quality</label>
+            <input type="range" id="quality_solution_design" name="quality_solution_design" min="0" max="10">
+        </div>
+        <div class="field">
+            <label for="quality_solution_delivery">Solution Delivery Quality</label>
+            <input type="range" id="quality_solution_delivery" name="quality_solution_delivery" min="0" max="10">
+        </div>
+        <div class="field">
+            <label for="quality_solution_execution">Solution Execution Quality</label>
+            <input type="range" id="quality_solution_execution" name="quality_solution_execution" min="0" max="10">
+        </div>
+
+        <button class="ui button" type="submit">Submit</button>
+    </form>
+
+    <script src='project.js' type='text/javascript'></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src='./semantic/dist/semantic.min.js' type='text/javascript'></script>
+</body>
+
+</html>

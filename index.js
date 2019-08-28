@@ -50,7 +50,7 @@ window.onload = () => {
         n.on('click', ev => {
             console.log(ev);
             const page = (size==100)?'dashboard.html':'project.html';
-            window.location = `http://localhost:3000/${page}?title=${n.data('name')}`;
+            window.location = `${window.location.href}${page}?title=${n.data('name')}`;
         })
     })
 }

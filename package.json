@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "chart.js": "^2.8.0",
-    "cytoscape": "^3.9.1"
+    "cytoscape": "^3.9.1",
+    "js-cookie": "^2.2.1"
   }
 }

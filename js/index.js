@@ -1,4 +1,5 @@
 window.onload = () => {
+    console.log('index.js loaded');
     var cy = cytoscape({
 
         container: document.getElementById('cy'), // container to render in
@@ -46,6 +47,7 @@ window.onload = () => {
     });
 
     cy.nodes().forEach(n => {
+        console.log('test')
         const size = n.data('size');
         n.on('click', ev => {
             console.log(ev);

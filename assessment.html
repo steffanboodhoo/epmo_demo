@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./semantic/dist/semantic.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1 id='project-title'></h1>
+    <form class="ui form">
+        <div class="field">
+            <div class="ui grid">
+                <label for="assessment-design_quality">Solution Design Quality</label>
+                <input type="range" id="assessment-design_quality" name="assessment-design_quality" min="0" max="10">
+                <div id="assessment-design_quality-val">test</div>
+            </div>
+        </div>
+        <div class="field">
+            <div class="ui grid">
+                <label for="assessment-delivery_quality">Solution Delivery Quality</label>
+                <input type="range" id="assessment-delivery_quality" name="assessment-delivery_quality" min="0" max="10">
+                <div id="assessment-delivery_quality-val">test</div>
+            </div>
+        </div>
+        <div class="field">
+            <div class="ui grid">
+                <label for="assessment-execution_quality">Solution Execution Quality</label>
+                <input type="range" id="assessment-execution_quality" name="assessment-execution_quality" min="0" max="10">
+                <div id="assessment-execution_quality-val">test</div>
+            </div>
+        </div>
+
+        <button class="ui button" type="submit" id='assessment_btn_submit'>Submit</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src='./semantic/dist/semantic.min.js' type='text/javascript'></script>
+    <script src='js/assessment.js' type='text/javascript'></script>
+
+</body>
+
+</html>

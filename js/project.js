@@ -7,7 +7,7 @@ window.onload = () => {
     //set up click events
     document.getElementById('btn_assess').addEventListener('click', ev => {
         console.log('click')
-        window.location = `${window.location.origin}/assessment.html?title=${PROJECT}`
+        window.location = `${window.location.href.split('project')[0]}/assessment.html?title=${PROJECT}`
     })
 
     //setup charts

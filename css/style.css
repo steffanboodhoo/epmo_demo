@@ -16,15 +16,32 @@
     background-color: green;
 }
 
+#programme_table{
+    width: 90%;
+    /* height: 90%;   */
+    margin-left: 5%; 
+    display: block; 
+}
 #cy {
     align-self: center;
-    width: 80%;
-    height: 80%;
+    margin-left: 5%;
+    /* margin-top: 1%; */
+    width: 90%;
+    height: 90%;
     display: block;
     background-color: rgb(223, 229, 235);
-  }
-
-node { 
-    background-color: #38a4d6; 
 }
 
+body{
+    align-items: center;
+}
+.test{ 
+    background-color: #38a4d6 !important; 
+    width:80%;
+    height:80%;
+
+}
+
+/* body{
+    background-color: #38a4d6;
+} */

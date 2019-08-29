@@ -4,7 +4,7 @@ window.onload = () => {
     document.getElementById('program-title').append(params.get('title'));
 
     // let elem_id = 'chart_first';
-    const create_chart = (elem_id) => {
+    const create_chart = (elem_id, title) => {
         var ctx = document.getElementById(elem_id).getContext('2d');
         var chart = new Chart(ctx, {
             // The type of chart we want to create
@@ -16,8 +16,8 @@ window.onload = () => {
                 datasets: [
                     {
                         label: 'Project A',
-                        backgroundColor: 'rgb(255, 99, 132)',
-                        borderColor: 'rgb(255, 99, 132)',
+                        backgroundColor: '#fa4e41',
+                        borderColor: '#8c2e27',
                         data: [40, 40, 50, 70, 70, 75, 80]
                     },
                     {
@@ -33,20 +33,20 @@ window.onload = () => {
             options:{
                 title: {
                     display: true,
-                    text: 'Cost over time'
+                    text: title
                 },
-                events:['click'],
-                onClick: (...args) => {
-                    console.log(args)
-                    const chart_data = args[1];//an array of data for each graph
-                    console.log(chart_data[0])//first graph; 0 would be the dataset index
-                    console.log(chart_data[0]._index)//clicked index; this is the point in data we clicked
-                    console.log(chart_data[0]._chart.data)
-                }
+                // events:['click'],
+                // onClick: (...args) => {
+                //     console.log(args)
+                //     const chart_data = args[1];//an array of data for each graph
+                //     console.log(chart_data[0])//first graph; 0 would be the dataset index
+                //     console.log(chart_data[0]._index)//clicked index; this is the point in data we clicked
+                //     console.log(chart_data[0]._chart.data)
+                // }
             },
         });
     }
-    create_chart('chart_first')
-    create_chart('chart_second')
-    create_chart('chart_third')
+    create_chart('chart_first', '% Cost Over Time')
+    create_chart('chart_second', '% Progress Over Time')
+    create_chart('chart_third', '% Quality Over Time')
 }
